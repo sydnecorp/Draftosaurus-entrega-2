@@ -58,3 +58,9 @@ Levantar Apache y MySQL desde XAMPP.
 Entrar en el navegador a:
 
 http://localhost/draftosaurus/index.php
+
+
+
+📖 Nota
+
+Este proyecto fue desarrollado con fines educativos, aplicando lo visto en clase de Programación (PHP, MySQL, sesiones y manejo de arreglos).
