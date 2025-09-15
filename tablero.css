@@ -1,0 +1,97 @@
+/* Imagen del tablero */ 
+.img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Fondo general */
+body {
+  background-image: url(imagenes/hh.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Botones base */
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Dado */
+.img-dado {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 20px;
+}
+.img-dado.girando {
+  transform: rotate(360deg);
+}
+
+/* Contenedor del tablero */
+.tablero-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+/* Recintos */
+.recinto {
+  position: absolute;
+  background: rgba(255,255,255,0); /* Invisible */
+  border: 2px dashed rgba(255,255,255,0.15);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.recinto:hover {
+  border-color: rgba(255,255,255,0.35);
+}
+
+.recinto.ocupado {
+  border-style: solid;
+  border-color: rgba(255,255,255,0.08);
+  cursor: not-allowed;
+}
+
+/* 🔹 Bloqueo de turno */
+.recinto.turno-bloqueado {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+/* Dinosaurios */
+.dino {
+  width: 30px;
+  height: auto;
+  margin: 5px;
+  cursor: grab;
+}
+.dino:active {
+  cursor: grabbing;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .img { width: 90%; }
+  button { width: 100%; margin: 10px 0; }
+  body { background-size: cover; background-position: center; }
+}

@@ -1,0 +1,68 @@
+body {
+  background: url("imagenes/parke2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 450px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+.card label {
+  display: block;
+  text-align: left;
+  margin: 8px 0 4px;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  background-color: #195e83;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #1574a6;
+}
+
+footer {
+  background-color: #195e83;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

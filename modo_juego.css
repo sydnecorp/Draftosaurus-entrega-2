@@ -1,0 +1,74 @@
+/* Fondo igual que en index */
+body {
+  background-image: url("imagenes/parke2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main centrado, sin caja flotante */
+main.container {
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+}
+
+/* Títulos */
+h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Botones */
+.btn-primary, .btn-success, .btn-secondary {
+  width: 220px;
+  font-size: 18px;
+  padding: 12px 0;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Verde igual que en estilo.css */
+.btn-success {
+  background-color: #000000;
+  border: none;
+}
+.btn-success:hover {
+  background-color: #000000;
+}
+
+/* Azul */
+.btn-primary {
+  background-color: #195e83;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #14455c;
+}
+
+/* Gris */
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+.btn-secondary:hover {
+  background-color: #565e64;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  main.container {
+    width: 90%;
+    margin-top: 40px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .btn-primary, .btn-success, .btn-secondary {
+    width: 100%;
+  }
+}
